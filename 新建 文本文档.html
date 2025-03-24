@@ -1,0 +1,28 @@
+<div class="sketchfab-embed-wrapper"> <iframe title="太和殿-AI大模型-三维视图-{三维}" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/0cc18c306852477097f6e1fd59c2bcab/embed?ui_theme=dark"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/ai-0cc18c306852477097f6e1fd59c2bcab?utm_medium=embed&utm_campaign=share-popup&utm_content=0cc18c306852477097f6e1fd59c2bcab" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> 太和殿-AI大模型-三维视图-{三维} </a> by <a href="https://sketchfab.com/lingxianjia7?utm_medium=embed&utm_campaign=share-popup&utm_content=0cc18c306852477097f6e1fd59c2bcab" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> lingxianjia7 </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=0cc18c306852477097f6e1fd59c2bcab" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>
+<style>
+  .sketchfab-embed-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+  }
+  .sketchfab-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+  }
+</style>
+<div class="sketchfab-embed-wrapper">
+  <iframe width="100%" height="480px" src="https://sketchfab.com/models/your-model-id/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<button onclick="rotateModel()">旋转模型</button>
+<iframe id="sketchfab-model" width="100%" height="480px" src="https://sketchfab.com/models/your-model-id/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<script>
+  function rotateModel() {
+    var iframe = document.getElementById('sketchfab-model');
+    iframe.contentWindow.postMessage('rotate', '*');
+  }
+</script>
